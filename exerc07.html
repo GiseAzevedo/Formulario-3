@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exerc07.css">
+    <title>Formulário2</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="POST" class="formLogin"></form>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="user">Usuário</label>
+        <input type="text" id="user" name="user" autofocus>
+
+        <label>Email</label>
+        <input type="email" required placeholder="digite um email válido">
+
+        <label>Telefone</label>
+        <input type="tel">
+
+        <label>Número de Filhos</label>
+        <input type="number" min="0" max="400">
+
+        <label>Nascimento</label>
+        <input type="date" min="2018-01-30" max="2138-01-30">
+
+        <p>Sexo</p>
+        <label>
+            <input type="radio" name="sexo" value="M">
+            Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="F">
+            Feminino
+        </label>
+
+        <label>Estado</label>
+        <select name="estado">
+            <option value="0">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SE">Sergipe</option>
+            <option value="BA">Bahia</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Área de Interesse</legend>
+        <label>
+            <input type="checkbox" name="artes plásticas" value="artes plásticas">Artes Plásticas
+        </label>
+        <label>
+            <input type="checkbox" name="TI" value="TI">TI
+        </label>
+        <label>
+            <input type="checkbox" name="gastronomia" value="gastronomia">Gastronomia
+        </label>
+        <label>
+            <input type="checkbox" name="economia" value="economia">Economia
+        </label>
+        <label>
+            <input type="checkbox" name="cinema" value="cinema">Cinema
+        </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Mensagem</legend>
+        <textarea style="resize:none" name="msg" cols="30" rows="10" maxlength="200"></textarea>
+
+        <textarea style="resize:none" name="contrato" cols="30" rows="10" readonly>Ao clicar no botão você se considera ciente de todos os termos de serviços do nosso site.</textarea>
+
+        <label><input type="checkbox">Li e Aceito</label>
+            
+
+
+
+        </fieldset>
+
+
+    <input type="submit" value="Enviar">
+
+
+
+    </form>
+
+</body>
+
+</html>
